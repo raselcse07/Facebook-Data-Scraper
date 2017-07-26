@@ -1,0 +1,23 @@
+{% extends "grab_data/base.html" %}
+
+{% block content %}
+
+<font face="verdana" size="8">Getting the Access Token</font>
+<hr>
+
+<font face="verdana" size="4"><p style="text-align:justify;">To be able to extract data from Facebook using a python code you need to register as a developer on Facebook and then have an access token. Here are the steps for it.</p>
+<li>Go to link <a href="developers.facebook.com" target="_blank">developers.facebook.com</a>,create an account there.</li>
+<li>Go to link <a href="developers.facebook.com/tools/explorer" target="_blank">developers.facebook.com/tools/explorer.</a></li>
+<li>Go to “My apps” drop down in the top right corner and select “add a new app”. Choose a display name and a category and then “Create App ID”.</li>
+<li>Again get back to the same link <a href="developers.facebook.com/tools/explorer" target="_blank">developers.facebook.com/tools/explorer.</a> You will see “Graph API Explorer” below “My Apps” in the top right corner. From “Graph API Explorer” drop down, select your app.</li>
+<li>Then, select “Get Token”. From this drop down, select “Get User Access Token”. Select permissions from the menu that appears and then select “Get Access Token.”</li>
+<li>Go to link <a href="developers.facebook.com/tools/accesstoken" target="_blank">developers.facebook.com/tools/accesstoken.</a> Select “Debug” corresponding to “User Token”. Go to “Extend Token Access”. This will ensure that your token does not expire every two hours.</li>
+</font>
+<hr>
+<font face="verdana" size="8">Data Type And Data Fields</font>
+<hr>
+<font face="verdana" size="4"><p>Go to link <a href="https://developers.facebook.com/docs/graph-api" target="_blank">developers.facebook.com/docs/graph-api</a> if want to collect data on anything that is available publicly. See <a href="https://developers.facebook.com/docs/graph-api/reference/v2.7/" target="_blank">this documentation</a>. From this documentation, choose any field you want from which you want to extract data such as “groups” or “pages” etc. Go to examples of codes after having selected these and then select “facebook graph api” and you will get hints on how to extract information.</p>
+</font><hr>
+<h4>This content courtesy- Ravi Ranjan</h4>
+<hr>
+{% endblock %}

@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Facebook Web Scrapper</title>
+
+<style>
+pre {
+    width: 700px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+
+input{
+
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+select{
+
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 700px;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin:0 auto;
+    width: 700px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color:#0659e9;
+    width: 750px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+h1{
+    color:red;
+    text-align:center;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="{% url "grab_data:home" %}">Home</a></li>
+  <li><a class="active" href="https://developers.facebook.com/tools/accesstoken/" target="_blank">Access Token</a></li>
+  <li><a class="active" href="{% url "grab_data:instructions" %}">Instructions</a></li>
+  <li><a href="{% url "grab_data:about" %}">About</a></li>
+  <li><a href="{% url "grab_data:developer" %}">Developer</a></li>
+</ul>
+<br>
+<div>
+
+    <font face="verdana" size="10">Facebook Web Scraper</font>
+
+    <form action=" " method="POST">{% csrf_token %}
+
+    <pre>
+
+       <font face="verdana" size="4">{{ form.token.label }}</font>                     {{ form.token }}
+       {{ form.help_text }}
+       <font face="verdana" size="4">{{ form.types_of_data.label }}</font>                          {{ form.types_of_data }}
+       {{ form.types_of_data.help_text }}
+       <font face="verdana" size="4">{{ form.data_fields.label }}</font>                        {{ form.data_fields }}
+       {{ form.data_fields.help_text }}
+       <font face="verdana" size="4">{{ form.number_of_data.label }}</font>                  {{ form.number_of_data }}
+
+    </pre>
+
+    <button type="submit">Get Your Data</button>
+
+    </form>
+
+</div>
+</body>
+</html>

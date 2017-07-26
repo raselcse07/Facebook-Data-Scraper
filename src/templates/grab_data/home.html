@@ -1,0 +1,27 @@
+{% extends "grab_data/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-lg-4">
+    <img class="img-circle" src="{% static "img/easy.jpg" %}" alt="Site Image" width="140" height="140">
+    <h2>Easy To Use</h2>
+    <p>You can get any facebook data from this site very easily.No need to create account.</p>
+    <p><a class="btn btn-default" href="{% url "grab_data:token" %}" role="button">Start Scraping &raquo;</a></p>
+  </div>
+  <div class="col-lg-4">
+    <img class="img-circle" src="{% static "img/free.jpg" %}" alt="Site Image" width="140" height="140">
+    <h2>Its Free</h2>
+    <p>This is a open source project.Its free to use.You can also check our source code.</p>
+    <p><a class="btn btn-default" href="#" role="button">Get Source Code &raquo;</a></p>
+  </div>
+  <div class="col-lg-4">
+    <img class="img-circle" src="{% static "img/download.png" %}" alt="Site Image" width="140" height="140">
+    <h2>Downlod Data</h2>
+    <p>You can download of all your data as JSON file.Read the instructions.</p>
+    <p><a class="btn btn-default" href="#" role="button">How To Use &raquo;</a></p>
+  </div>
+</div>
+
+{% endblock %}
