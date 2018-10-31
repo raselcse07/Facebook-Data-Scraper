@@ -5,5 +5,5 @@ django-crispy-forms==1.6.1
 facebook-sdk==2.0.0
 idna==2.5
 pytz==2017.2
-requests==2.18.1
+requests>=2.20.0
 urllib3==1.21.1
