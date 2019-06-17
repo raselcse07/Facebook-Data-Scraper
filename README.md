@@ -1,5 +1,5 @@
 # Facebook Data Scraper.
-!(http://raselsplanet.com/media/data_sraping_Rasels_Planet_2.jpg)
+![](http://raselsplanet.com/media/data_sraping_Rasels_Planet_2.jpg)
 
 # Project Purpose
 * Thesis (A Comparative Sentiment Analysis On Bengali Facebook Posts)
