@@ -1,6 +1,6 @@
 certifi==2017.4.17
 chardet==3.0.4
-Django==1.11.15
+Django==1.11.23
 django-crispy-forms==1.6.1
 facebook-sdk==2.0.0
 idna==2.5
